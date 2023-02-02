@@ -2,4 +2,4 @@
 
 ### Artificial Intelligence/Machine Learning Application and Pipeline Security-Focused Development Framework
 
-![This is an image](/AI-ML Pipeline Diagram.svg)
+![AI/ML Pipeline Diagram](/AI-ML Pipeline Diagram.svg)
