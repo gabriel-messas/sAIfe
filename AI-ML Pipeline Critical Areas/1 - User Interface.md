@@ -10,10 +10,13 @@
 		--- Security Misconfiguration - Running outdated/vulnerable server and application software, Running in debug mode and/or revealing error handling information, Having directory listing enabled, Running unnecessary services, Not changing default keys and passwords
 			---- Solution: Using up-to-date software versions, Following industry standards and recommendations for Web server configuration
 		--- Sensitive Data Exposure - Showing sensitive data in URLs, Exposing sensitive data in Cookies, Using unencrypted data transfer, Storing unencrypted data
-			---- Solution: Not using URLs to convey sensitive data, Setting the "secure" flag on Cookies, Using encrypted HTTPS connection for data transit, Encrypting stored sensitive data
+			---- Solution: Not using URLs to convey sensitive data, Setting the "Secure" and "HttpOnly" flags on Cookies, Using encrypted HTTPS connection for data transit, Encrypting stored sensitive data
 		--- Authorization Flaws - Missing access control for specific functionalities
 			---- Solution: Implementing role-based access control
 
 (*) - Item may have direct impact on the AI/ML aspect itself
 
-References: https://www.toptal.com/security/10-most-common-web-security-vulnerabilities
+References:
+
+- https://owasp.org/Top10/
+- https://www.toptal.com/security/10-most-common-web-security-vulnerabilities
