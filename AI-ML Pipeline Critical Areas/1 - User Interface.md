@@ -6,7 +6,7 @@
 		--- Injection Flaws - SQL injection (*), Code injection (*), HTML injection, Cross-site scripting
 			---- Solution: Input sanitization
 		--- Authentication Flaws - Unencrypted passwords in transit, Exposed or predictable session data, Credential stuffing and/or brute-force attacks, Session fixation, Session hijacking
-			---- Solution: Password encryption/hashing, Session data safe generation and encryption, Authentication timeouts, HTTPS criptography, "Secure" flag on Cookies
+			---- Solution: Password encryption/hashing, Session data safe generation and encryption, Authentication timeouts, HTTPS criptography, Setting the "Secure" flag on Cookies
 		--- Security Misconfiguration - Running outdated/vulnerable server and application software, Running in debug mode and/or revealing error handling information, Having directory listing enabled, Running unnecessary services, Not changing default keys and passwords
 			---- Solution: Using up-to-date software versions, Following industry standards and recommendations for Web server configuration
 		--- Sensitive Data Exposure - Showing sensitive data in URLs, Exposing sensitive data in Cookies, Using unencrypted data transfer, Storing unencrypted data
