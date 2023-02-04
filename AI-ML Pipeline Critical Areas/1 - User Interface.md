@@ -12,7 +12,7 @@
 		--- Sensitive Data Exposure - Showing sensitive data in URLs, Exposing sensitive data in Cookies, Using unencrypted data transfer, Storing unencrypted data
 			---- Solution: Not using URLs to convey sensitive data, Setting the "Secure" and "HttpOnly" flags on Cookies, Using encrypted HTTPS (TLS) connection for data transit, Encrypting stored sensitive data
 		--- Authorization Flaws - Missing access control for specific paths/functionalities
-			---- Solution: Implementing role-based access control
+			---- Solution: Implementing role-based access control for each path
 
 (*) - Item may have direct impact on the AI/ML aspect itself
 
