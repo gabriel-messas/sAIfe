@@ -11,6 +11,8 @@
 			---- Solution: Not relying on another portion of the application to filter sensitive data, Implementing a schema-based request/response validation mechanism, Using encrypted HTTPS (TLS) connection for data in transit, Setting the Cookies' "Secure" and "HttpOnly" flags on headers
                 --- Resource Exhaustion - Unlimited resource numbers for server applications, Unlimited request rate, Unlimited maximum incoming payload size, Unrestricted pagination limit
                         ---- Solution: Limiting hardware resource levels for server applications, Limiting the amount of requests over time for a same user, Restricting the maximum incoming data size per request, Setting maximum pagination parameters
+		--- Mass Assignment - Lack of data validation/sanitization mechanism, Lack of whitelist/blacklist property restriction on endpoints
+			---- Solution: Implementing a schema-based request/response validation mechanism, Implementing a whitelist/blacklist for specify properties of the object to be altered
                         
 <!-- 		--- Injection Flaws - SQL injection (*), Code injection (*), HTML injection, Cross-site scripting
 			---- Solution: Input sanitization
