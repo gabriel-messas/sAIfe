@@ -1,6 +1,6 @@
-1 - User Interface
+## 1 - User Interface
+#### Typically, a Web and/or a mobile application, from which statistical data is going to be manually inputted by a user
 
-	-- Typically, a Web and/or a mobile application, from which statistical data is going to be manually inputted by a user
 	-- Possible threats and/or vulnerabilities:
 		--- For a general Web application, all the typical points mentioned by OWASP are valid;
 		--- Injection Flaws - SQL injection (*), NoSQL injection (*), Code injection (*), HTML injection, Cross-site scripting
