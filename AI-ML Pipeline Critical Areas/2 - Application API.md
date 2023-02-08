@@ -13,11 +13,12 @@
 			---- Solution: Limiting hardware resource levels for server applications, Limiting the amount of requests over time for a same user, Restricting the maximum incoming data size per request, Setting maximum pagination parameters
 		--- Mass Assignment - Lack of data validation/sanitization mechanism, Lack of whitelist/blacklist property restriction on endpoints
 			---- Solution: Implementing a schema-based request/response validation mechanism, Implementing a whitelist/blacklist for specify properties of the object to be altered
+		--- Security Misconfiguration - Running outdated/vulnerable server and application software, Running in debug mode and/or revealing error handling information, Running unnecessary services, Not changing default keys and passwords
+			---- Solution: Using up-to-date software versions, Following industry standards and recommendations for API server configuration, Restricting accessible endpoints and request types (HTTP verbs), Implementing Cross-Origin Resource Sharing (CORS) policy
                         
 <!-- 		--- Injection Flaws - SQL injection (*), Code injection (*), HTML injection, Cross-site scripting
 			---- Solution: Input sanitization
-		--- Security Misconfiguration - Running outdated/vulnerable server and application software, Running in debug mode and/or revealing error handling information, Having directory listing enabled, Running unnecessary services, Not changing default keys and passwords
-			---- Solution: Using up-to-date software versions, Following industry standards and recommendations for Web server configuration -->
+ -->
 
 (*) - Item may have direct impact on the AI/ML aspect itself
 
