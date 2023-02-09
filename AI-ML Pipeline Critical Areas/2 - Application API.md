@@ -23,7 +23,7 @@
 		- Solution: Using up-to-date software versions, Following industry standards and recommendations for API server configuration, Restricting accessible endpoints and request types (HTTP verbs), Implementing Cross-Origin Resource Sharing (CORS) policy
 			
  	- **Injection Flaws** (*) - SQL injection, NoSQL injection, Code injection
-		- Solution: Incoming request data sanitization
+		- Solution: Incoming request data sanitization, Performing active data validation against data types and patterns
 
 (*) - Item may have direct impact on the AI/ML aspect itself
 
