@@ -5,7 +5,7 @@
 	
 	- For a general Web application, all the typical points mentioned by OWASP are valid;
 		
-	- **Injection Flaws** - SQL injection (*), NoSQL injection (*), Code injection (*), HTML injection, Cross-site scripting
+	- **Injection Flaws** - SQL injection (\*), NoSQL injection (\*), Code injection (\*), HTML injection, Cross-site scripting
 		- Solution: Input sanitization
 			
 	- **Authentication Flaws** - Unencrypted passwords in transit, Exposed or predictable session data, Credential stuffing and/or brute-force attacks, Session fixation, Session hijacking
@@ -20,7 +20,7 @@
 	- **Authorization Flaws** - Missing access control for specific paths/functionalities
 		- Solution: Implementing role-based access control for each path
 
-(*) - Item may have direct impact on the AI/ML aspect itself
+(\*) - Item may have direct impact on the AI/ML aspect itself
 
 References:
 
