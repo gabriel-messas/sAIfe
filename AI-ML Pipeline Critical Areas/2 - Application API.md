@@ -2,6 +2,7 @@
 #### Typically, an endpoint externally accessible over the Internet, through which separate parts of the application communicate
 
 - Possible threats and/or vulnerabilities:
+
 	- For a general HTTP API, all the typical points mentioned by OWASP are valid;
 
 	- **Authentication Flaws** - Unencrypted passwords in transit, Credential stuffing and/or brute-force attacks, Lack of token validation
