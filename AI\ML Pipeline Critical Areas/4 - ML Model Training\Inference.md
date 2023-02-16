@@ -8,7 +8,7 @@
 
 	- **Training-time-focused attacks**
 		- Poisoning: tries to manipulate the model by altering the training data being fed to it
-			- Label manipulation: switches or alters labels in order to degrade the model's future performance
+			- Label manipulation: switches or alters labels (in a supervised classifier) in order to degrade the model's future performance
 			- Input manipulation
 				- Direct poisoning of learning inputs: alters features of the data being input in order to change the model
 				- Indirect poisoning of the learning inputs: poisons the data before pre-processing to disturb model training
