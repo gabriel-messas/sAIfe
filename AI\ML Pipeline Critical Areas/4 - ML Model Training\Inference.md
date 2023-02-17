@@ -12,6 +12,7 @@
 			- Input manipulation
 				- Direct poisoning of learning inputs: alters features of the data being input in order to change the model
 				- Indirect poisoning of the learning inputs: poisons the data before pre-processing to disturb model training
+		- Solution: Implementing strict access management policies to limit direct access to training data, Applying input filtering/manipulation detection techniques, Robustifying the model, 
 
 	- **Inference-time-focused attacks**
 		- Exploratory: tries to induce determined outputs by varying the input provided
@@ -38,5 +39,4 @@
 
 References:
 
-- https://www.datasunrise.com/potential-db-threats/10-common-vulnerabilities/
-- https://www.darkreading.com/vulnerabilities-threats/the-10-most-common-database-vulnerabilities
+- https://www.datasciencecentral.com/top-7-data-security-threats-to-ai-and-ml/
