@@ -12,17 +12,19 @@
 			- Input manipulation
 				- Direct poisoning of learning inputs: alters features of the data being input in order to change the model
 				- Indirect poisoning of the learning inputs: poisons the data before pre-processing to disturb model training
-		- Solution: Implementing strict access management policies to limit direct access to training data, Applying input filtering/manipulation detection techniques, Robustifying the model, 
+			- Solution: Implementing strict access management policies to limit direct access to training data, Applying input filtering/manipulation detection techniques, Robustifying the model
 
 	- **Inference-time-focused attacks**
 		- Exploratory: tries to induce determined outputs by varying the input provided
-		- Oracle: tries to extract the model itself by providing inputs, analyzing and combining their results. It gets much harder when there is no access to the probabilities returned by the model.
+			- Solution: Implementing rate limit/timeout for inference requests, Reducing the amount of information returned (e.g. probabilities/percentages)
+		- Oracle/model extraction: tries to extract the model itself by providing inputs, analyzing and combining their results
+			- Solution: Implementing rate limit/timeout for inference requests, Reducing the amount of information returned (e.g. probabilities/percentages)
 		- Direct manipulation of model inputs: alters the feature values processed by the model to get different predictions
 			- Source-target misclassification/targeted: does so with the intention of getting a specific classification
 			- Simple misclassification/untargeted: does so with the intention of getting any different than optimal classification
 		- Indirect manipulation of model inputs: alters the feature values processed by the model to get different predictions
 		- Membership inference: tries to figure out whether a determined set of inputs was part of the model's training data in order to clone the model
-		- Training data extraction/model inversion: with access to the model and its predictions, attempts to reverse engineer the results to recover training data
+		- Model inversion/training data extraction: with access to the model and its predictions, attempts to reverse engineer the results to recover training data
 
 	- Possible solutions/preventions
 	-- [STRONG] Customized inputs on client-side that should pass - in a determined way - a validation on the model's server-side. This method would work similarly to the known public/private-key pair authentication: only a legitimate actor would possess the information on how to modify the input data being sent in a way that it would succeed the validation tests.
