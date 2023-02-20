@@ -3,15 +3,12 @@
 
 - Possible threats and/or vulnerabilities:
 
-	- **Security Misconfiguration** - Running outdated/vulnerable DBMS versions, Running in debug mode and/or revealing error handling information, Not changing default keys and passwords, Leaving the database server externally accessible through the Internet
-		- Solution: Using up-to-date software versions, Following industry standards and recommendations for DBMS configuration, Restricting database access to the internal/private network
-
 	- **Training-time-focused attacks**
 		- Poisoning: tries to manipulate the model by altering the training data being fed to it
-			- Label manipulation: switches or alters labels (in a supervised classifier) in order to degrade the model's future performance
+			- Label manipulation: switches or alters input labels (in a supervised classifier) in order to degrade the model's future performance
 			- Input manipulation
-				- Direct poisoning of learning inputs: alters features of the data being input in order to change the model
-				- Indirect poisoning of the learning inputs: poisons the data before pre-processing to disturb model training
+				- Direct poisoning of learning inputs: alters features of the data being input in order to change the future trained model for a specific behaviour
+				- Indirect poisoning of the learning inputs: poisons the data before pre-processing only to disturb model training unspecifically
 			- Solution: Implementing strict access management policies to limit direct access to training data, Applying input filtering/manipulation detection techniques, Robustifying the model
 
 	- **Inference-time-focused attacks**
@@ -25,6 +22,10 @@
 		- Indirect manipulation of model inputs: alters the feature values processed by the model to get different predictions
 		- Membership inference: tries to figure out whether a determined set of inputs was part of the model's training data in order to clone the model
 		- Model inversion/training data extraction: with access to the model and its predictions, attempts to reverse engineer the results to recover training data
+
+	- **General-time attacks**
+		- Logic corruption: alters the ML logic/algorithm itself and the way it learns and infers outputs
+			- Implementing strict access management policies to limit direct access to the application source code and contents
 
 	- Possible solutions/preventions
 	-- [STRONG] Customized inputs on client-side that should pass - in a determined way - a validation on the model's server-side. This method would work similarly to the known public/private-key pair authentication: only a legitimate actor would possess the information on how to modify the input data being sent in a way that it would succeed the validation tests.
@@ -42,3 +43,5 @@
 References:
 
 - https://www.datasciencecentral.com/top-7-data-security-threats-to-ai-and-ml/
+- https://towardsdatascience.com/poisoning-attacks-on-machine-learning-1ff247c254db
+- https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8685687
