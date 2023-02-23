@@ -6,22 +6,23 @@
 	- **Training-time-focused attacks**
 		- Poisoning: tries to manipulate the model by altering the training data being fed to it
 			- Label manipulation: switches or alters input labels (in a supervised classifier) in order to degrade the model's future performance
+			
 			- Input manipulation
 				- Direct poisoning of learning inputs: alters features of the data being input in order to change the future trained model for a specific behaviour
-				- Indirect poisoning of the learning inputs: poisons the data before pre-processing only to disturb model training unspecifically
+				- Indirect poisoning of the learning inputs (before pre-processing): poisons the data before pre-processing only to disturb model training unspecifically
 			- Solution: Implementing strict access management policies to limit direct access to training data, Applying input filtering/manipulation detection techniques, Robustifying the model
 
 	- **Inference-time-focused attacks**
 		- Exploratory: tries to induce determined outputs by varying the input provided
-			- Solution: Implementing rate limit/timeout for inference requests, Reducing the amount of information returned (e.g. probabilities/percentages)
 		- Oracle/model extraction: tries to extract the model itself by providing inputs, analyzing and combining their results
-			- Solution: Implementing rate limit/timeout for inference requests, Reducing the amount of information returned (e.g. probabilities/percentages)
-		- Direct manipulation of model inputs: alters the feature values processed by the model to get different predictions
-			- Source-target misclassification/targeted: does so with the intention of getting a specific classification
-			- Simple misclassification/untargeted: does so with the intention of getting any different than optimal classification
-		- Indirect manipulation of model inputs: alters the feature values processed by the model to get different predictions
+		- Input manipulation
+			- Direct manipulation of model inputs: alters the feature values processed by the model to get different predictions
+				- Source-target misclassification/targeted: does so with the intention of getting a specific classification
+				- Simple misclassification/untargeted: does so with the intention of getting any different than optimal classification
+			- Indirect manipulation of model inputs (before pre-processing): alters the data processed by the model before pre-processing to get abnormal predictions
 		- Membership inference: tries to figure out whether a determined set of inputs was part of the model's training data in order to clone the model
-		- Model inversion/training data extraction: with access to the model and its predictions, attempts to reverse engineer the results to recover training data
+		- Model inversion/training data extraction: with access to the model and its predictions, attempts to reverse engineer the inferred results to recover training data
+		- Solution: Implementing rate limit/timeout for inference requests, Reducing the amount of information returned (e.g. probabilities/percentages)
 
 	- **General-time attacks**
 		- Logic corruption: alters the ML logic/algorithm itself and the way it learns and infers outputs
