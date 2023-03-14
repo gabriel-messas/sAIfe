@@ -3,29 +3,22 @@
 
 - Possible threats and/or vulnerabilities:
 
-	- **Training-time-focused attacks**
-		- Poisoning: tries to manipulate the model by altering the training data being fed to it
-			- Label manipulation: switches or alters input labels (in a supervised classifier) in order to degrade the model's future performance
-			
-			- Input manipulation
-				- Direct poisoning of learning inputs: alters features of the data being input in order to change the future trained model for a specific behaviour
-				- Indirect poisoning of the learning inputs (before pre-processing): poisons the data before pre-processing only to disturb model training unspecifically
+	- **Training-time vulnerabilities**
+		- **Training Data Integrity Flaws** - Susceptibility to unwanted training data alterations, Lack of protection against malicious input manipulation
 			- Solution: Implementing strict access management policies to limit direct access to training data, Applying input filtering/manipulation detection techniques, Robustifying the model, Retraining with adversarial samples (Adversarial training)
 
-	- **Inference-time-focused attacks**
-		- Exploratory: tries to induce determined outputs by varying the input provided
-		- Oracle/model extraction: tries to extract the model itself by providing inputs, analyzing and combining their results
-		- Evasion/input manipulation
-			- Direct manipulation of model inputs: alters the feature values processed by the model to get different predictions
-				- Source-target misclassification/targeted: does so with the intention of getting a specific classification
-				- Simple misclassification/untargeted: does so with the intention of getting any different than optimal classification
-			- Indirect manipulation of model inputs (before pre-processing): alters the data processed by the model before pre-processing to get abnormal predictions
-		- Membership inference: tries to figure out whether a determined set of inputs was part of the model's training data
-		- Model inversion/training data extraction: attempts to reverse engineer the inferred results to recover training data
-		- Solution: Implementing rate limit/timeout for inference requests, Reducing the amount of information returned in results (e.g. probabilities/percentages), Applying input filtering/manipulation detection techniques, Robustifying the model
+	- **Inference-time vulnerabilities**
+		- **Inference Output Integrity Flaws** - Susceptibility to returning wrongful inference results, Lack of protection against malicious input manipulation, Absence of rate limit/timeout for inference requests, Excess of information returned in inference outputs
+			- Solution: Implementing rate limit/timeout for inference requests, Reducing the amount of information returned in results (e.g. probabilities/percentages), Applying input filtering/manipulation detection techniques, Robustifying the model
 
-	- **General-time attacks**
-		- Logic corruption: alters the ML logic/algorithm itself and the way it learns and infers outputs
+		- **Model Logic Confidentiality Flaws** - Susceptibility to exposing critical model characteristics through inference results, Excess of information returned in inference outputs
+			- Solution: Implementing rate limit/timeout for inference requests, Reducing the amount of information returned in results (e.g. probabilities/percentages)
+
+		- **Training Data Confidentiality Flaws** - Susceptibility to directly or indirectly exposing private information of the training data used, Absence of rate limit/timeout for inference requests, Excess of information returned in inference outputs
+			- Solution: Implementing rate limit/timeout for inference requests, Reducing the amount of information returned in results (e.g. probabilities/percentages)
+
+	- **General-time vulnerabilities**
+		- **Model Logic Integrity Flaws** - Susceptibility to alteration and/or corruption of the ML logic/algorithm itself, Lack of security to access application internals
 			- Solution: Implementing strict access management policies to limit direct access to the application source code and contents
 
 	- Possible general solutions/preventions
