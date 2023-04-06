@@ -1,4 +1,4 @@
-## 2 - Application API
+## 2 - API/Server
 #### Typically, an endpoint externally accessible over the Internet, through which separate parts of the application communicate
 
 - Possible threats and/or vulnerabilities:
