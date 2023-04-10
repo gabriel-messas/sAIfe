@@ -12,9 +12,8 @@
 
 ### Framework Application Steps
 1. Create an infrastructure diagram of the entire application to be analyzed, including main elements and communications between them
-2. Compare the created diagram with the one provided by the framework and advance only the overlapping/similar elements to the next step
-3. For each of the resulting elements, proceed to check the respective "Critical Area" detailed document
-4. For each "Critical Area" detailed document, run through the vulnerabilities list and pick the ones applicable to the application in question
+2. Compare the created diagram with the generic one provided by the framework and advance only the overlapping/similar elements to the next step
+3. For each of the resulting elements, proceed to check the respective "Critical Area" detailed document. For each of these, run through the vulnerabilities list and pick the ones applicable to the application in question
 5. For each of the filtered vulnerabilities, apply to the system at issue as many of the solutions provided as possible
 
 
