@@ -5,6 +5,9 @@
 
 	- For a general HTTP API, all the typical points mentioned by OWASP are valid;
 
+ 	- **Injection Flaws** (\*) - SQL injection, NoSQL injection, Code injection
+		- Solution: Incoming request data sanitization, Performing active data validation against data types and patterns
+
 	- **Authentication Flaws** - Unencrypted passwords in transit, Credential stuffing and/or brute-force attacks, Lack of token validation
 		- Solution: Password encryption/hashing, Authentication request timeouts, Token authenticity, signature and expiration validation, HTTPS (TLS) criptography, Setting the Cookies' "Secure" flag on headers
 
@@ -22,9 +25,6 @@
 			
 	- **Security Misconfiguration** - Running outdated/vulnerable server and application software, Running in debug mode and/or revealing error handling information, Running unnecessary services, Not changing default keys and passwords
 		- Solution: Using up-to-date software versions, Following industry standards and recommendations for API server configuration, Restricting accessible endpoints and request types (HTTP verbs), Implementing Cross-Origin Resource Sharing (CORS) policy
-			
- 	- **Injection Flaws** (\*) - SQL injection, NoSQL injection, Code injection
-		- Solution: Incoming request data sanitization, Performing active data validation against data types and patterns
 
 (\*) - Item may have direct impact on the AI/ML aspect itself
 
