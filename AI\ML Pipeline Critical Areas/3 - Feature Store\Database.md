@@ -3,14 +3,14 @@
 
 - Possible threats and/or vulnerabilities:
 
-	- **Security Misconfiguration** - Running outdated/vulnerable DBMS versions, Running in debug mode and/or revealing error handling information, Not changing default keys and passwords, Leaving the database server externally accessible through the Internet
-		- Solution: Using up-to-date software versions, Following industry standards and recommendations for DBMS configuration, Restricting database access to the internal/private network
-
 	- **Authentication Flaws** - Unencrypted credentials in transit while establishing connection
 		- Solution: Enforcing encrypted (TLS) connection when accessing the database server
 
 	- **Authorization Flaws** - Using highly privileged database user accounts
 		- Solution: Restricting permissions of database accounts when they are used by another portions of the system
+
+	- **Security Misconfiguration** - Running outdated/vulnerable DBMS versions, Running in debug mode and/or revealing error handling information, Not changing default keys and passwords, Leaving the database server externally accessible through the Internet
+		- Solution: Using up-to-date software versions, Following industry standards and recommendations for DBMS configuration, Restricting database access to the internal/private network
 			
 	- **Sensitive Data Exposure** - Using unencrypted data transfer, Storing unencrypted data
 		- Solution: Using encrypted (TLS) connection for data transit, Encrypting stored data
