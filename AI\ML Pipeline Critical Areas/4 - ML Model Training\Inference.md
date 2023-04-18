@@ -1,5 +1,5 @@
-## 4 - ML Model Training\Inference
-#### Typically, the main step, whose entity is being/has been trained on a set of data and generates inferences when provided with inputs
+## 4 - ML Model
+#### Typically, the main part, whose entity is being/has been trained on a set of data and generates inferences when provided with inputs
 
 - Possible threats and/or vulnerabilities:
 
