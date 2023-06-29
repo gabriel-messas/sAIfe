@@ -23,7 +23,7 @@
 		- Application Parts
 		- Connections between Application Parts
 
-- Critical Area Detailed Document
+- Critical Area Detailed Documents
 	- Element Description
 	- Vulnerabilities
 		- Solutions
@@ -32,8 +32,8 @@
 ### Elements' Explanations
 - Infrastructure Diagram: contains the architecture of an entire AI/ML application, portraying every possible computational element participating in the process, along with the connections established between each of them.
 - Application Part: computational element of an AI/ML application
-- Connection between Application Parts: data communication channel coming and/or going from an application part
+- Connection between Application Parts: data communication channel coming to or going from an application part
 - Critical Area: relevant section of an AI/ML application in which security flaws are feasible to happen. It is composed by an application part and the connections immediately surrounding it. For a general system, there are typically going to be four principal critical areas: user interface applications (for data entry and output visualization); an API/server (to connect different parts of the application and exchange data); a Machine Learning model (to actually calculate inferences); and a Feature Store/database (to hold all the non-volatile data).
 - Element Description: short description about the application part in question
-- Vulnerabilities: possible weaknesses/failure points the critical area at issue might have
-- Solutions: suggested prevention actions for the respective vulnerability
+- Vulnerability: possible weakness/failure point the Critical Area at issue might have
+- Solution: suggested prevention action for the respective vulnerability
