@@ -24,7 +24,7 @@
 		- Solution: Limiting hardware resource levels for server applications, Limiting the amount of requests over time for a same user, Restricting the maximum incoming data size per request, Setting maximum pagination parameters
 			
 	- **Mass Assignment** (\*) - Lack of data validation/sanitization mechanism, Lack of whitelist/blacklist property restriction on endpoints
-		- Solution: Implementing a schema-based request/response validation mechanism, Implementing a whitelist/blacklist for specify properties of the object to be altered
+		- Solution: Implementing a schema-based request/response validation mechanism, Implementing a whitelist/blacklist to specify properties of the object to be altered
 
 (\*) - Item may have direct impact on the AI/ML aspect itself
 
