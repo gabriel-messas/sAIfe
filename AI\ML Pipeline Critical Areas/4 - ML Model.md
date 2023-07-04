@@ -5,7 +5,7 @@
 
 	- **Training-time vulnerabilities**
 		- **Training Data Integrity Flaws** - Susceptibility to unwanted training data alterations, Lack of protection against malicious input manipulation
-			- Solution: Implementing strict access management policies to limit direct access to training data, Applying input filtering/manipulation detection techniques, Robustifying the model, Retraining with adversarial samples (Adversarial training), Periodic data integrity checks and outliers removal
+			- Solution: Implementing strict access management policies to limit direct access to training data, Applying input filtering/manipulation detection techniques, Robustifying the model, Retraining with adversarial samples (Adversarial training), Periodic data integrity checks and outlier removal
 
 	- **Inference-time vulnerabilities**
 		- **Inference Output Integrity Flaws** - Susceptibility to returning wrongful inference results, Lack of protection against malicious input manipulation, Absence of rate limit/timeout for inference requests, Excess of information returned in inference outputs
