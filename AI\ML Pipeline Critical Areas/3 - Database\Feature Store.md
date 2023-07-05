@@ -1,4 +1,4 @@
-## 3 - Feature Store/Database
+## 3 - Database/Feature Store
 #### Typically, a storage space managed and served by an application, in which general information and ML data itself can be kept
 
 - Possible threats and/or vulnerabilities:
