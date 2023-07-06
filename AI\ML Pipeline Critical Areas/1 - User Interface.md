@@ -1,5 +1,5 @@
 ## 1 - User Interface
-#### Typically, a Web and/or a mobile application, from which statistical data is going to be manually inputted by a user
+#### Typically, a Web and/or a mobile application, from which statistical data is going to be manually inputted and or consumed by a user
 
 - Possible threats and/or vulnerabilities:
 	
