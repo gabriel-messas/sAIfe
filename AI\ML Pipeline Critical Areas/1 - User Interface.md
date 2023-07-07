@@ -12,10 +12,10 @@
 	- **Authentication Flaws** - Unencrypted passwords in transit, Exposed or predictable session data, Credential stuffing and/or brute-force attacks, Session fixation, Session hijacking
 		- Solution(s):
   			- Password encryption/hashing
-     		- Session data safe generation and encryption
-        	- Authentication timeouts
-          	- HTTPS(TLS) criptography
-          	- Setting the "Secure" flag on Cookies
+  			- Session data safe generation and encryption
+  			- Authentication timeouts
+  			- HTTPS(TLS) criptography
+  			- Setting the "Secure" flag on Cookies
 
 	- **Authorization Flaws** - Missing access control for specific paths/functionalities
 		- Solution(s):
@@ -24,14 +24,14 @@
 	- **Security Misconfiguration** - Running outdated/vulnerable server and application software, Running in debug mode and/or revealing error handling information, Having directory listing enabled, Running unnecessary services, Not changing default keys and passwords
 		- Solution(s):
   			- Using up-to-date software versions
-     		- Following industry standards and recommendations for Web server configuration
+  			- Following industry standards and recommendations for Web server configuration
 			
 	- **Sensitive Data Exposure** - Showing sensitive data in URLs, Exposing sensitive data in Cookies, Using unencrypted data transfer, Storing unencrypted data
 		- Solution(s):
   			- Not using URLs to convey sensitive data
-     		- Setting the "Secure" and "HttpOnly" flags on Cookies
-       		- Using encrypted HTTPS (TLS) connection for data transit
-         	- Encrypting stored sensitive data
+  			- Setting the "Secure" and "HttpOnly" flags on Cookies
+  			- Using encrypted HTTPS (TLS) connection for data transit
+  			- Encrypting stored sensitive data
 
 (\*) - Item may have direct impact on the AI/ML aspect itself
 
