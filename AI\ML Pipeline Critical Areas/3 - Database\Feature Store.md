@@ -21,16 +21,18 @@
 		- Solution(s):
 			- Using encrypted (TLS) connection for data transit
 			- Encrypting stored data
-			
-	- **Data Loss** (\*) - Missing backup plan, Unprotected backup files
-		- Solution(s):
-			- Structuring a data backup plan
-			- Securing already backed up information
 
 	- **Resource Exhaustion** (\*) - Unlimited resource numbers for database server applications, Allowing unlimited simultaneous database connections
 		- Solution(s):
 			- Limiting hardware resource levels for database server applications
 			- Limiting the amount of open database connections at a time
+
+	- **Data Loss** (\*) - Missing backup plan, Unprotected backup files
+		- Solution(s):
+			- Structuring a data backup plan
+			- Securing already backed up information
+
+
 
 (\*) - Item may have direct impact on the AI/ML aspect itself
 
