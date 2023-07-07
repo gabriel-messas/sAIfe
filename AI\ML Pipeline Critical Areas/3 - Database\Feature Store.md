@@ -4,22 +4,33 @@
 - Possible threats and/or vulnerabilities:
 
 	- **Authentication Flaws** - Unencrypted credentials in transit while establishing connection
-		- Solution: Enforcing encrypted (TLS) connection when accessing the database server
+		- Solution(s):
+  			- Enforcing encrypted (TLS) connection when accessing the database server
 
 	- **Authorization Flaws** - Using highly privileged database user accounts
-		- Solution: Restricting permissions of database accounts when they are used by other portions of the system
+		- Solution(s):
+  			- Restricting permissions of database accounts when they are used by other portions of the system
 
 	- **Security Misconfiguration** - Running outdated/vulnerable DBMS versions, Running in debug mode and/or revealing error handling information, Not changing default keys and passwords, Leaving the database server externally accessible through the Internet
-		- Solution: Using up-to-date software versions, Following industry standards and recommendations for DBMS configuration, Restricting database access to the internal/private network
+		- Solution(s):
+			- Using up-to-date software versions
+			- Following industry standards and recommendations for DBMS configuration
+			- Restricting database access to the internal/private network
 			
 	- **Sensitive Data Exposure** - Using unencrypted data transfer, Storing unencrypted data
-		- Solution: Using encrypted (TLS) connection for data transit, Encrypting stored data
+		- Solution(s):
+			- Using encrypted (TLS) connection for data transit
+			- Encrypting stored data
 			
 	- **Data Loss** (\*) - Missing backup plan, Unprotected backup files
-		- Solution: Structuring a data backup plan, Securing already backed up information
+		- Solution(s):
+			- Structuring a data backup plan
+			- Securing already backed up information
 
 	- **Resource Exhaustion** (\*) - Unlimited resource numbers for database server applications, Allowing unlimited simultaneous database connections
-		- Solution: Limiting hardware resource levels for database server applications, Limiting the amount of open database connections at a time
+		- Solution(s):
+			- Limiting hardware resource levels for database server applications
+			- Limiting the amount of open database connections at a time
 
 (\*) - Item may have direct impact on the AI/ML aspect itself
 
