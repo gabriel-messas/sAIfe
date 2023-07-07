@@ -15,7 +15,7 @@
 			- Password encryption/hashing
 			- Authentication request timeouts
 			- Token authenticity, signature and expiration validation
-			- HTTPS (TLS) criptography
+			- HTTPS(TLS) criptography
 			- Setting the Cookies' "Secure" flag on headers
 
 	- **Authorization Flaws** - Missing access control for specific paths/functionalities
