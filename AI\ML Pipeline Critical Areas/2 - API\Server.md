@@ -33,7 +33,7 @@
 		- Solution(s):
 			- Not relying on another portion of the application to filter sensitive data
 			- Implementing a schema-based request/response validation mechanism
-			- Using encrypted HTTPS (TLS) connection for data in transit
+			- Using encrypted HTTPS (TLS) connection for data transit
 			- Setting the Cookies' "Secure" and "HttpOnly" flags on headers
 			
 	- **Resource Exhaustion** (\*) - Unlimited resource numbers for server applications, Unlimited request rate, Unlimited maximum incoming payload size, Unrestricted pagination limit
