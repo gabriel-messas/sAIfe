@@ -4,7 +4,7 @@
 
 <!-- [AI/ML Pipeline Diagram](/AI-ML%20Pipeline%20Diagram.svg) -->
 
-![AI_ML Pipeline Numbered](https://user-images.githubusercontent.com/40281674/223287863-f0fa3666-c235-4adc-9138-354ad53bfa47.svg)
+![AI_ML Pipeline Numbered](https://github.com/gabriel-messas/sAIfe-AI-ML-Secure-Framework/assets/40281674/1b538a7d-4fed-4266-b0f3-6e74bed51497)
 |:--:|
 | __*Typical AI/ML Pipeline Diagram*__ |
 
