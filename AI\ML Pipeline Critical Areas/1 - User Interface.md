@@ -7,31 +7,31 @@
 		
 	- **Injection Flaws** - SQL injection (\*), NoSQL injection (\*), Code injection (\*), HTML injection, Cross-site scripting
 		- Solution(s):
-  			- Input sanitization
+  			- Input Sanitization
 			
 	- **Authentication Flaws** - Unencrypted passwords in transit, Exposed or predictable session data, Credential stuffing and/or brute-force attacks, Session fixation, Session hijacking
 		- Solution(s):
-  			- Password encryption/hashing
-  			- Session data safe generation and encryption
-  			- Authentication timeouts
-  			- HTTPS(TLS) criptography
-  			- Setting the "Secure" flag on Cookies
+  			- Password Encryption - HTTPS (TLS) Cryptography
+  			- Session Data Safe Handling
+  			- Authentication Timeouts
+  			- Setting the Appropriate Security Flags on Cookies - "Secure", "HttpOnly" and "SameSite"
 
 	- **Authorization Flaws** - Missing access control for specific paths/functionalities
 		- Solution(s):
-  			- Implementing role-based access control for each path
+  			- Role-Based Access Control
 			
 	- **Security Misconfiguration** - Running outdated/vulnerable server and application software, Running in debug mode and/or revealing error handling information, Having directory listing enabled, Running unnecessary services, Not changing default keys and passwords
 		- Solution(s):
-  			- Using up-to-date software versions
-  			- Following industry standards and recommendations for Web server configuration
+  			- Up-to-date Software Versions
+  			- Disabling Debug Mode
+  			- Disabling Directory Listing
+  			- Changing Default Values
 			
 	- **Sensitive Data Exposure** - Showing sensitive data in URLs, Exposing sensitive data in Cookies, Using unencrypted data transfer, Storing unencrypted data
 		- Solution(s):
-  			- Not using URLs to convey sensitive data
-  			- Setting the "Secure" and "HttpOnly" flags on Cookies
-  			- Using encrypted HTTPS (TLS) connection for data transit
-  			- Encrypting stored sensitive data
+  			- Encrypted Communication - HTTPS (TLS) Cryptography
+  			- URL Protection - Not using URL parameters to convey sensitive unencrypted data
+  			- Storage Protection - Not storing sensitive unencrypted data in browser storage
 
 (\*) - Item may have direct impact on the AI/ML aspect itself
 
