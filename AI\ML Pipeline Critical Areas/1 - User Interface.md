@@ -13,12 +13,12 @@
 		- Solution(s):
   			- Password Encryption - HTTPS (TLS) Cryptography
   			- Session Data Safe Handling
-  			- Authentication Timeouts
+  			- Authentication Timeouts - Pre-determined token expiration times
   			- Setting the Appropriate Security Flags on Cookies - "Secure", "HttpOnly" and "SameSite"
 
 	- **Authorization Flaws** - Missing access control for specific paths/functionalities
 		- Solution(s):
-  			- Role-Based Access Control
+  			- Role-Based Access Control - For each path
 			
 	- **Security Misconfiguration** - Running outdated/vulnerable server and application software, Running in debug mode and/or revealing error handling information, Having directory listing enabled, Running unnecessary services, Not changing default keys and passwords
 		- Solution(s):
