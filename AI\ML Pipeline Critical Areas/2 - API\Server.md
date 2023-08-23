@@ -7,46 +7,43 @@
 
  	- **Injection Flaws** (\*) - SQL injection, NoSQL injection, Code injection
 		- Solution(s):
-			- Incoming request data sanitization
-			- Performing active data validation against data types and patterns
+			- Input Sanitization
+			- Performing Active Data Validation Against Data Types and Patterns
 
 	- **Authentication Flaws** - Unencrypted passwords in transit, Credential stuffing and/or brute-force attacks, Lack of token validation
 		- Solution(s):
-			- Password encryption/hashing
-			- Authentication request timeouts
-			- Token authenticity, signature and expiration validation
-			- HTTPS(TLS) criptography
-			- Setting the Cookies' "Secure" flag on headers
+			- Password Encryption/Hashing - HTTPS (TLS) Cryptography
+   			- Request Throttling
+			- Authentication Timeouts
+			- Authentication Validation - Token authenticity, signature and expiration validation
+			- Setting the Appropriate Security Flags on Cookies - "Secure", "HttpOnly" and "SameSite"
 
 	- **Authorization Flaws** - Missing access control for specific paths/functionalities
 		- Solution(s):
-			- Implementing role-based access control for each endpoint and request type
+			- Role-Based Access Control - For each endpoint and request type
 
 	- **Security Misconfiguration** - Running outdated/vulnerable server and application software, Running in debug mode and/or revealing error handling information, Running unnecessary services, Not changing default keys and passwords
 		- Solution(s):
-			- Using up-to-date software versions
-			- Following industry standards and recommendations for API server configuration
-			- Restricting accessible endpoints and request types (HTTP verbs)
-			- Implementing Cross-Origin Resource Sharing (CORS) policy
+			- Up-to-date Software Versions
+			- Disabling Debug Mode
+   			- Changing Default Values
+			- Implementing Cross-Origin Resource Sharing (CORS) Policy
 			
 	- **Sensitive Data Exposure** - Returning unfiltered sensitive/excessive data on requests, Using unencrypted data transfer
 		- Solution(s):
-			- Not relying on another portion of the application to filter sensitive data
-			- Implementing a schema-based request/response validation mechanism
-			- Using encrypted HTTPS(TLS) connection for data transit
-			- Setting the Cookies' "Secure" and "HttpOnly" flags on headers
+			- Encrypted Communication - HTTPS (TLS) Cryptography
+   			- Return Minimal Data
 			
 	- **Resource Exhaustion** (\*) - Unlimited resource numbers for server applications, Unlimited request rate, Unlimited maximum incoming payload size, Unrestricted pagination limit
 		- Solution(s):
-			- Limiting hardware resource levels for server applications
-			- Limiting the amount of requests over time for a same user
-			- Restricting the maximum incoming data size per request
-			- Setting maximum pagination parameters
+			- Request Throttling
+			- Limited Payload Sizes
+			- Maximum Pagination Parameters
+   			- Limiting Hardware Resource Levels for Server Applications
 			
 	- **Mass Assignment** (\*) - Lack of data validation/sanitization mechanism, Lack of whitelist/blacklist property restriction on endpoints
 		- Solution(s):
-			- Implementing a schema-based request/response validation mechanism
-			- Implementing a whitelist/blacklist mechanism to specify properties of the object to be altered
+			- Properties Whitelist - Schema-based request/response validation mechanism with specific properties of the object to be altered
 
 (\*) - Item may have direct impact on the AI/ML aspect itself
 
