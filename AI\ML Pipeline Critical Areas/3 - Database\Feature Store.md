@@ -5,32 +5,33 @@
 
 	- **Authentication Flaws** - Unencrypted credentials in transit while establishing connection
 		- Solution(s):
-  			- Enforcing encrypted (TLS) connection when accessing the database server
+  			- Password Encryption - Using encrypted (TLS) connection when accessing the database server
 
 	- **Authorization Flaws** - Using highly privileged database user accounts
 		- Solution(s):
-  			- Restricting permissions of database accounts when they are used by other portions of the system
+  			- Least Privilege Account - Restricting permissions of database accounts
 
 	- **Security Misconfiguration** - Running outdated/vulnerable DBMS versions, Running in debug mode and/or revealing error handling information, Not changing default keys and passwords, Leaving the database server externally accessible through the Internet
 		- Solution(s):
-			- Using up-to-date software versions
-			- Following industry standards and recommendations for DBMS configuration
-			- Restricting database access to the internal/private network
+			- Up-to-date Software Versions
+			- Disabling Debug Mode
+   			- Changing Default Values
+			- Private Network - Restricting database access to the internal/private network
 			
 	- **Sensitive Data Exposure** - Using unencrypted data transfer, Storing unencrypted data
 		- Solution(s):
-			- Using encrypted (TLS) connection for data transit
-			- Encrypting stored data
+			- Encrypted Communication - Using encrypted (TLS) connection for data transit
+			- Encrypted Data at Rest
 
 	- **Resource Exhaustion** (\*) - Unlimited resource numbers for database server applications, Allowing unlimited simultaneous database connections
 		- Solution(s):
-			- Limiting hardware resource levels for database server applications
-			- Limiting the amount of open database connections at a time
+			- Limiting Hardware Resource Levels for Database Server Applications
+			- Limited Connections - Limiting the amount of open database connections at a time
 
 	- **Data Loss** (\*) - Missing backup plan, Unprotected backup files
 		- Solution(s):
-			- Structuring a data backup plan
-			- Securing already backed up information
+			- Backup Plan
+			- Backup Protection - Securing already backed up information
 
 
 
