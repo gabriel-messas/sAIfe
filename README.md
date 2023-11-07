@@ -2,13 +2,19 @@
 
 ### Artificial Intelligence/Machine Learning Application and Pipeline Security-Focused Development Framework
 
-<!-- [AI/ML Pipeline Diagram](/AI-ML%20Pipeline%20Diagram.svg) -->
+<br/>
 
-![AI_ML Pipeline Numbered](https://github.com/gabriel-messas/sAIfe-AI-ML-Secure-Framework/assets/40281674/1b538a7d-4fed-4266-b0f3-6e74bed51497)
+![AI/ML Universal Infrastructure Diagram](/Diagrams/AI\ML%20Pipeline.svg)
 |:--:|
-| __*Typical AI/ML Pipeline Diagram*__ |
+| __*sAIfe's Universal Infrastructure Diagram*__ |
 
 <br/>
+
+### sAIfe
+
+sAIfe is a framework for development of secure applications that include AI/ML capabilities.
+It is focused on providing software systems with higher levels of security - by reducing risks and preventing vulnerabilities - through an innovative protocol with prescriptive steps, to be applied by the concerned developer(s) during architectural design, an early stage of the Software Development Life Cycle.
+
 
 ### Framework Application Steps
 1. Create an infrastructure diagram of the entire application to be analyzed, including main elements and communications between them
