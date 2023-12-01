@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/canvas-text-printer.js"></script>
+        <script src="js/diagram.js" defer></script>
+        <script src="js/application-parts.js" defer></script>
+        <script src="js/analysis.js" defer></script>
+        <script src="js/index.js" defer></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>sAIfe Automatic Analysis Tool</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="title">
+                <h2>sAIfe Automatic Analysis Tool</h2>
+            </div>
+            <div class="tools">
+                <button id="analysis" type="button" title="Analyse" onclick="analyse()" class="btn">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <span>Analyse</span>
+                </button>
+
+				<div class="save-btn">
+					<button type="button" title="Save" onclick="onSave()" class="btn">
+						<i class="fa-solid fa-floppy-disk"></i>
+						<span>Save</span>
+					</button>
+					<button type="button" title="Load" onclick="onLoad()" class="btn">
+						<i class="fa-solid fa-upload"></i>
+						<span>Load</span>
+					</button>
+				</div>
+
+				<button type="button" title="Analyse" onclick="onDownload()" class="btn">
+					<i class="fa-solid fa-floppy-disk"></i>
+					<span>Download Diagram</span>
+				</button>
+
+				<hr>
+
+                <div class="draw-btn">
+                    <button id="draw" title="Draw" onclick="toggleDrawingProcess()" class="size-btn btn">
+                        <i class="fa-solid fa-pen"></i>
+                        <span>Draw</span>
+                    </button>
+                    <button class="size-btn btn" onclick="sizeList()">
+                        <i class="fa-solid fa-caret-down"></i>
+                        <ul class="size-list">
+                            <li>
+                                <div class="size" style="--set-size:02px"></div>
+                            </li>
+                            <li>
+                                <div class="size" style="--set-size:05px"></div>
+                            </li>
+                            <li>
+                                <div class="size" style="--set-size:08px"></div>
+                            </li>
+                            <li>
+                                <div class="size" style="--set-size:10px"></div>
+                            </li>
+                            <li>
+                                <div class="size" style="--set-size:15px"></div>
+                            </li>
+                        </ul>
+                    </button>
+                </div>
+
+                <button id="eraser" type="button" title="Eraser" onclick="erase()" class="btn">
+                    <i class="fa-solid fa-eraser"></i>
+                    <span>Eraser</span>
+                </button>
+
+				<hr>
+
+                <button id="rectangle" title="Rectangle" onclick="rectangleList()" class="rectangle-btn btn">
+                    <i class="fa-regular fa-square"></i>
+                    <span>Rectangle</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <ul class="rectangle-list">
+                        <li>
+                            <div class="rectangleOption">User Interface</div>
+                        </li>
+                        <li>
+                            <div class="rectangleOption">API/Server</div>
+                        </li>
+                        <li>
+                            <div class="rectangleOption">Database/<wbr>Feature Store</div>
+                        </li>
+                        <li>
+                            <div class="rectangleOption">ML Model</div>
+                        </li>
+                        <li>
+                            <div class="rectangleOption">Element</div>
+                        </li>
+                    </ul>
+                </button>
+
+                <button id="line" type="button" title="Connection Line" onclick="toggleConnectionLineProcess()" class="btn">
+                    <i class="fa-solid fa-link"></i>
+                    <span>Connection Line</span>
+                </button>
+
+				<hr>
+
+                <button type="button" title="Color" class="color-btn btn">
+                    <input type="color" id="color-picker">
+                    <label for="color-picker">
+                        <div></div>
+                        Color
+                    </label>
+                </button>
+
+                <div class="color-palette">
+                    <span class="color" style="--set-color:#000000"></span>
+                    <span class="color" style="--set-color:#808080"></span>
+                    <span class="color" style="--set-color:#800000"></span>
+                    <span class="color" style="--set-color:#ff0000"></span>
+                    <span class="color" style="--set-color:#ffff00"></span>
+                    <span class="color" style="--set-color:#008000"></span>
+                    <span class="color" style="--set-color:#00a2e8"></span>
+                    <span class="color" style="--set-color:#3f48cc"></span>
+                    <span class="color" style="--set-color:#a349a4"></span>
+                    <span class="color" style="--set-color:#ffffff"></span>
+                    <span class="color" style="--set-color:#c3c3c3"></span>
+                    <span class="color" style="--set-color:#ffaec9"></span>
+                    <span class="color" style="--set-color:#ffc90e"></span>
+                    <span class="color" style="--set-color:#b5e61d"></span>
+                    <span class="color" style="--set-color:#99d9ea"></span>
+                </div>
+            </div>
+        </header>
+        <div class="canvas-container">
+            <div class="fake-canvas-div"></div>
+            <canvas class="canvas1" id="canvas1"></canvas>
+            <canvas class="canvas2" id="canvas2"></canvas>
+        </div>
+    </body>
+</html>
