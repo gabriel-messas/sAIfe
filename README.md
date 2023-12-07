@@ -4,7 +4,7 @@
 
 <br/>
 
-![AI/ML Universal Infrastructure Diagram](/Diagrams/AI\ML%20Pipeline.svg)
+![AI/ML Universal Infrastructure Diagram](/Diagrams/AI-ML%20Pipeline.svg)
 |:--:|
 | __*sAIfe's Universal Infrastructure Diagram*__ |
 
