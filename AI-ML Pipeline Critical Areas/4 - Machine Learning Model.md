@@ -42,3 +42,4 @@ References:
 - https://towardsdatascience.com/poisoning-attacks-on-machine-learning-1ff247c254db
 - https://towardsdatascience.com/evasion-attacks-on-machine-learning-or-adversarial-examples-12f2283e06a1
 - https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8685687
+- https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2023.pdf
