@@ -1,6 +1,6 @@
-Case Study - ConsistencIA Application - Critical Area Analysis Report
+## Case Study - ConsistencIA Application - Critical Area Analysis Report
 
-User Interface
+### User Interface
 For this category, the following vulnerabilities can be exploited and pose
 a threat to ConsistencIA:
 
@@ -16,7 +16,7 @@ set up properly;
 via HTTP requests must not leak critical information to users or third-
 parties.
 
-API/Server
+### API/Server
 For this category, the following vul-
 nerabilities can be exploited and pose a threat to ConsistencIA:
 
@@ -37,7 +37,7 @@ may cause computational problems;
 - Mass Assignment – as write-operation endpoints might compromise
 other data that should not be in scope;
 
-Database/Feature Store
+### Database/Feature Store
 For this category, the
 following vulnerabilities can be exploited and pose a threat to ConsistencIA:
 
@@ -54,7 +54,7 @@ cause computational problems;
 - Data Loss – as the data stored cannot be permanently lost due to
 unforeseen circumstances.
 
-Machine Learning Model
+### Machine Learning Model
 For this category, the following vulnerabilities can be exploited and pose a threat to ConsistencIA:
 
 - Training Data Integrity Flaws – as malicious inputs can cause unwanted
