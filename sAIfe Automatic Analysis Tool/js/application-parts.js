@@ -22,19 +22,23 @@ function getStructuredContentForApplicationPart (applicationPart, applicationPar
 				<br/><br/>`;
 	
 	for (const threat of ap.threats) {
-		content += `${threat.name}`
-		content += '<br/>';
+		content += `<div style="width: 100%;">
+						<span onclick="collapseThreat(this)" ${threat.solutions?.length > 0 ? 'class="collapsed"' : 'class="empty"' } style="cursor: pointer;">${threat.name}</span>
+						<br/>`;
 		if (threat.solutions?.length > 0) {
-			content += 'Solution(s):';
-			content += '<br/>'
+			content += `<div style="display: none;">Solution(s):
+							<br/>`;
 
 			for (const solution of threat.solutions) {
 				let acronym = `${getAcronym(ap.name)}-${getAcronym(threat.name)}-${getAcronym(solution.name)}`;
-				content += `<input type="checkbox" id="${acronym}-${applicationPartCount}" ${getCurrentValue(`${acronym}-${applicationPartCount}`) ? "checked" : ""} onchange="toggleCheckbox(this)">${solution.name}</input>`;
-				content += '<br/>';
+				content += `	<input type="checkbox" id="${acronym}-${applicationPartCount}" ${getCurrentValue(`${acronym}-${applicationPartCount}`) ? "checked" : ""} onchange="toggleCheckbox(this)">${solution.name}</input>`;
+				content += `	<br/>`;
 			}
+
+			content += `</div>`;
 		}
-		content += '<br/>'
+		content += `</div>
+					<br/>`;
 	}
 
 	content += `${ap.observation || ''}`;
@@ -42,6 +46,16 @@ function getStructuredContentForApplicationPart (applicationPart, applicationPar
 	content += '</div>';
 
 	return content;
+}
+
+function collapseThreat(element) {
+	element.classList.toggle('collapsed');
+	const nextElement = element.nextElementSibling.nextElementSibling;
+	if (nextElement.style.display === 'none') {
+		nextElement.style.display = 'block';
+	} else {
+		nextElement.style.display = 'none';
+	}
 }
 
 function toggleCheckbox(checkbox) {

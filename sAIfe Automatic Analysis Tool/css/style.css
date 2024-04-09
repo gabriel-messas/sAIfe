@@ -238,3 +238,15 @@ img#danger:hover {
 #apModal::-webkit-scrollbar-thumb:hover {
 	background: #7e7e7e; 
 }
+
+#apModal div div {
+	span.collapsed:before {
+		content: "► ";
+	}
+	span:not(.collapsed):before {
+		content: "▼ ";
+	}
+	span.empty:before {
+		content: "";
+	}
+}
