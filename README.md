@@ -4,9 +4,9 @@
 
 <br/>
 
-![AI/ML Universal Infrastructure Diagram](/Diagrams/AI-ML%20Pipeline.svg)
+![AI/ML Universal Infrastructure Diagram](/Diagrams/Architecture%20Diagram%20Template.svg)
 |:--:|
-| __*sAIfe's Universal Infrastructure Diagram*__ |
+| __*sAIfe's Architecture Diagram Template*__ |
 
 <br/>
 
