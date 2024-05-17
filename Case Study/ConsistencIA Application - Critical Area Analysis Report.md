@@ -26,7 +26,6 @@ from the Website and from the sensors;
 going to have to authenticate to prove their legitimacy;
 - Authorization Flaws – as some server functions must only be accessible
 by users with specific roles;
-
 - Security Misconfiguration – as the Python Flask server will have to be
 set up properly, following industry standards.
 - Sensitive Data Exposure – as the data returned by the API and the
