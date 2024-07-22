@@ -4,9 +4,9 @@
 
 <br/>
 
-![AI/ML Universal Infrastructure Diagram](/Diagrams/Architecture%20Diagram%20Template.svg)
+![Reference Architecture Diagram](/Diagrams/Reference%20Architecture%20Diagram.svg)
 |:--:|
-| __*sAIfe's Architecture Diagram Template*__ |
+| __*sAIfe's Reference Architecture Diagram*__ |
 
 <br/>
 
